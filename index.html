@@ -4,25 +4,44 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Etch-a-Sketch</title>
-  <link href=style.css rel="stylsheet">
+  <title>Pixel Art</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Etch-a-Sketch</h1>
+    <h1>Pixel Art</h1>
   </header>
   <main>
-    <div class="settings">
-
+    <div class="color-settings">
+      <div class="choice-container">
+        <input id="pen-choice" class="color-choice" type="color" value="#000000">
+        <label for="pen-choice">Pen Color</label>
+      </div>
+      <div class="choice-container">
+        <input id="bg-choice" class="color-choice" type="color" value="#ffffff">
+        <label for="bg-choice">Background Color</label>
+      </div>
+      <button id="color" class="color-mode" type="button">Color</button>
+      <button id="rainbow" class="color-mode" type="button">Rainbow</button>
+      <button id="pastel" class="color-mode" type="button">Pastel</button>
+      <button id="eraser" class="color-mode" type="button">Eraser</button>
     </div>
     <div class="grid">
-
+    </div>
+    <div class="grid-settings">
+      <span id="dimensions"></span>
+      <input id="size" type="range" min="3" max="64" value="16">
+      <button id="clear" type="button">Clear</button>
     </div>
   </main>
   <footer>
     <p>© Leianne Fajutagana</p>
   </footer>
 
-  <script src="/main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
+
