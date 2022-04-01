@@ -28,9 +28,7 @@ function makeGrid(size) {
     grid.appendChild(gridItem); // Add item to the grid
   }
 
-  dimensions.innerText = `${size} x ${size}`;
-
-
+  dimensions.innerText = `Canvas size: ${size} x ${size}`;
 }
 
 function setMode() {
@@ -68,7 +66,7 @@ function changeColor(e) {
     let pastel = `hsl(${h()}, 90%, 85%)`;
     this.style.backgroundColor = pastel;
   } else {
-    this.style.backgroundColor = bgColor;
+    this.style.backgroundColor = 'transparent';
   }
 }
 
@@ -82,8 +80,8 @@ function changeGridSize() {
   clearGrid();
 }
 
-
 makeGrid(size);
+document.querySelector('#color').classList.add('active-mode');
 modes.forEach(mode => mode.addEventListener('click', setMode));
 choices.forEach(choice => choice.addEventListener('change', setColorChoice));
 clearBtn.addEventListener('click', clearGrid);
