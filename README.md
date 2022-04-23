@@ -1,4 +1,4 @@
-# pixel-art
+# Pixel Art Editor
 A clean and intuitive pixel art editor you can use in the browser.
 
 Features:
