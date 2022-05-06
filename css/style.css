@@ -69,7 +69,7 @@ label {
 
 .color-choice::-webkit-color-swatch {
   border-radius: 50%;
-  background-color: #fffd8e;
+  background-color: transparent;
   border: 2px solid #000000;
   color: #000000;
 }
@@ -109,6 +109,7 @@ label {
   border: 2px solid black;
   padding: 0.25rem 0.5rem;
   border-radius: 1rem;
+  color: black;
 }
 
 .color-modes button:hover {
