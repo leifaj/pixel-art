@@ -5,40 +5,42 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pixel Art</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:ital,wght@0,300;0,400;1,400&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Pixel Art</h1>
-  </header>
   <main>
-    <div class="canvas-area">
-      <div class="choices-container">
-        <div class="color-container">
-          <label for="pen-choice">Pen</label>
-          <input id="pen-choice" class="color-choice" type="color" value="#000000">
-        </div>
-        <div class="color-container">
-          <label for="bg-choice">Canvas</label>
-          <input id="bg-choice" class="color-choice" type="color" value="#ffffff">
-        </div>
+    <h1>Pixel Art</h1>
+    <div class="choices-container">
+      <div class="color-container">
+        <label for="pen-choice">Pen</label>
+        <input id="pen-choice" class="color-choice" type="color" value="#000000">
       </div>
-      <div class="grid">
+      <div class="color-container">
+        <label for="bg-choice">Canvas</label>
+        <input id="bg-choice" class="color-choice" type="color" value="#ffffff">
       </div>
-      <div class="color-modes">
+    </div>
+    <div class="grid">
+    </div>
+    <div class="color-modes">
+      <div class="color-mode-row">
         <button id="color" class="color-mode" type="button">Pen</button>
         <button id="rainbow" class="color-mode" type="button">Rainbow</button>
         <button id="pastel" class="color-mode" type="button">Pastel</button>
+      </div>
+      <div class="color-mode-row">
         <button id="eraser" class="color-mode" type="button">Eraser</button>
         <button id="clear" type="button">Clear</button>
       </div>
     </div>
+
     <div class="grid-settings">
-      <span id="dimensions"></span>
       <input id="size" type="range" min="3" max="64" value="16">
+      <span id="dimensions"></span>
     </div>
   </main>
   <footer>
