@@ -13,6 +13,7 @@ body {
   width: 100%;
   min-height: 100vh;
   padding: 2rem;
+  color: black;
 }
 
 main {
@@ -69,7 +70,6 @@ label {
 
 .color-choice::-webkit-color-swatch {
   border-radius: 50%;
-  background-color: transparent;
   border: 2px solid #000000;
   color: #000000;
 }
