@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --element-width: 90%;
+}
+
 html {
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
@@ -76,7 +80,7 @@ label {
 
 .grid {
   display: grid;
-  width: 100%;
+  min-width: var(--element-width);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 24px;
   border: 2px solid black;
 }
@@ -128,7 +132,7 @@ label {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  width: 70%;
+  width: var(--element-width);
 }
 
 #size {
@@ -183,14 +187,14 @@ footer {
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width: 480px) {
-  body {
-    padding: 2rem 6rem;
+  :root {
+    --element-width: 60%;
   }
 }
 
 @media only screen and (min-width : 600px) {
-  body {
-    padding: 2rem 10rem;
+  :root {
+    --element-width: 50%;
   }
 
   .color-modes {
@@ -200,9 +204,8 @@ footer {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
-  body {
-    padding: 2rem 14rem;
+  :root {
+    --element-width: 40%;
   }
 }
 
@@ -212,15 +215,15 @@ footer {
     font-size: 20px;
   }
 
-  body {
-    padding: 2rem 18rem;
+  :root {
+    --element-width: 30%;
   }
 }
 
 /* Large Devices */
 @media only screen and (min-width: 1200px) {
-  body {
-    padding: 2rem 22rem;
+  :root {
+    --element-width: 25%;
   }
 }
 
@@ -230,12 +233,14 @@ footer {
     font-size: 22px;
   }
 
-  body {
-    padding: 2rem 26rem;
+  :root {
+    --element-width: 20%;
   }
 }
 
 /* XL Devices */
 @media only screen and (min-width: 2000px) {
-
+  html {
+    font-size: 26px;
+  }
 }
